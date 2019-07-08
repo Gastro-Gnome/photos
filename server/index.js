@@ -1,13 +1,14 @@
 const express = require('express');
-const Photos = require('../database/photos.js')
+const path = require('path');
+const Photos = require('../database/photos.js');
 
 const app = express();
 const port = 3000;
 
-app.use(express.static('../public'));
+app.use(express.static(path.join(__dirname, '../public')));
 
 app.get('/', (req, res) => {
-  res.end('hi');
+  res.end();
 });
 
 app.get('/biz_photos/:businessId', (req, res) => {
