@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/fec', { useNewUrlParser: true });
-
-const db = mongoose.connection;
+const db = mongoose.connect('mongodb://localhost/fec', { useNewUrlParser: true });
 
 module.exports = db;
