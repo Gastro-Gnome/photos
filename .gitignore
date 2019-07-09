@@ -1,3 +1,7 @@
 node_modules
 package-lock.json
+<<<<<<< HEAD
 public/main.js
+=======
+/public/main.js
+>>>>>>> serve static files
