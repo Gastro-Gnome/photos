@@ -46,7 +46,7 @@
     "setupFilesAfterEnv": [
       "./client/testSetup.js"
     ],
-    "snapsjotSerializers": [
+    "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ]
   }
