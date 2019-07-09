@@ -10,7 +10,7 @@
   "scripts": {
     "build": "webpack --config webpack.config.js -w",
     "start": "nodemon server/index.js",
-    "seed" : "node database/seed.js"
+    "seed": "node database/seed.js"
   },
   "dependencies": {
     "express": "^4.17.1",
