@@ -10,7 +10,8 @@
   "scripts": {
     "build": "webpack --config webpack.config.js -w",
     "start": "nodemon server/index.js",
-    "seed" : "node database/seed.js"
+    "seed": "node database/seed.js",
+    "test": "jest"
   },
   "dependencies": {
     "express": "^4.17.1",
@@ -26,6 +27,9 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
     "babel-preset-airbnb": "^4.0.1",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.3.5",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.1",
     "eslint-config-airbnb-base": "^13.2.0",
@@ -33,7 +37,17 @@
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.2",
+    "jest": "^24.8.0",
     "webpack": "^4.35.2",
     "webpack-cli": "^3.3.5"
+  },
+  "jest": {
+    "verbose": true,
+    "setupFilesAfterEnv": [
+      "./client/testSetup.js"
+    ],
+    "snapsjotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }
