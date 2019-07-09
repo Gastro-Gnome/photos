@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "photos",
   "version": "",
   "description": "",
   "author": "",
@@ -10,12 +10,8 @@
   "scripts": {
     "build": "webpack --config webpack.config.js -w",
     "start": "nodemon server/index.js",
-<<<<<<< HEAD
     "seed": "node database/seed.js",
     "test": "jest"
-=======
-    "seed": "node database/seed.js"
->>>>>>> serve static files
   },
   "dependencies": {
     "express": "^4.17.1",
