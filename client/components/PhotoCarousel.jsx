@@ -3,9 +3,9 @@ import PhotoSet from './PhotoSet.jsx';
 
 const PhotoCarousel = () => (
   <div className="photo-carousel">
-    <PhotoSet />
-    <PhotoSet />
-    <PhotoSet />
+    {/* <PhotoSet position="prev" /> */}
+    <PhotoSet position="current" />
+    {/* <PhotoSet position="next" /> */}
   </div>
 );
 

@@ -1,14 +1,14 @@
 import React from 'react';
 import PhotoBox from './PhotoBox.jsx';
 
-const Photo = () => (
-  <div className="photo">
+const Photo = ({location}) => (
+  <div className={`photo photo-${location}`}>
     <div className="photo-container">
       <PhotoBox />
     </div>
     <div className="photo-box-overlay">
       <div className="media-avatar">
-        {/* <PhotoBox /> */}
+        <PhotoBox />
       </div>
       <div className="media-story">
         {/* <a className="photo-desc" href= >{}</a> */}

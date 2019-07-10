@@ -1,5 +1,105 @@
 div{
-  border: 2px solid black;
-  height: 20px;
-  width: 40px;
+  border: 1px solid black;
+  /* padding-top: 5px; */
+ 
+}
+#app{
+  display: flex;
+  justify-content: flex-end;
+}
+.showcase-container{
+  height: 336px;
+  width: 660px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.showcase-container_inner{
+  height: 220px;
+  width: 660px;
+}
+.top-shelf-grey{
+  /* height: 20658px;
+  width: 100%; */
+}
+.photos-footer{
+  height: 30.39px;
+  width: 660px;
+}
+.photo-carousel{
+  border: none;
+  padding: 0px;
+  height: 0px;
+  width: 660px;
+}
+.photo-set{
+  height: 220px;
+  position: absolute;
+  width: 660px;
+  /* display: inline-block; */
+  display: flex;
+  flex-direction: row;
+}
+.prev{
+  z-index: -2;
+}
+.next{
+  z-index: -1;
+}
+.photo{
+  height: 220px;
+  width: 220px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.photo-left{
+  z-index: 0;
+  /* position: absolute;
+  left: 110; */
+}
+.photo-middle{
+  z-index: 1;
+  height: 250px;
+  width: 250px;
+  margin: -15px;
+  /* position: absolute;
+  left: 330; */
+}
+.photo-right{
+  z-index: 0;
+  /* position: absolute;
+  left: 550; */
+}
+.photo-container{
+  height: 100%;
+  width: 100%;
+}
+.photo-box-overlay{
+  height: 42.24px;
+  width: 220px;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.photo-box{
+  height:100%;
+  width: 100%;
+}
+.media-avatar{
+  height: 36px;
+  width: 36px;
+}
+.media-story{
+  height: 36px;
+  width: 150px;
+}
+img{
+  height: 100%;
+  width: 100%;
 }

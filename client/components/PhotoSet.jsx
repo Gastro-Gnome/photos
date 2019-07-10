@@ -1,11 +1,11 @@
 import React from 'react';
 import Photo from './Photo.jsx';
 
-const PhotoSet = () => (
-  <div className="photo-set">
-    <Photo />
-    <Photo />
-    <Photo />
+const PhotoSet = ({position }) => (
+  <div className={`photo-set ${position}`}>
+    <Photo location="left" />
+    <Photo location="middle" />
+    <Photo location="right" />
   </div>
 
 );

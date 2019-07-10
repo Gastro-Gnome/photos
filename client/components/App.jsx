@@ -23,12 +23,12 @@ class App extends React.Component {
     return (
       <div className="showcase-container">
         <div className="showcase-container_inner">
-          <div className="top-shelf-grey" />
-          <div className="photos-footer" />
+          {/* <div className="top-shelf-grey" /> */}
           <PhotoCarousel />
-          <div className="nav nav-left" />
-          <div className="nav nav-right" />
+          {/* <div className="nav nav-left" />
+          <div className="nav nav-right" /> */}
         </div>
+        <div className="photos-footer">Footer</div>
       </div>
     );
   }
