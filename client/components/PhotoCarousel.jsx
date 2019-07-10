@@ -1,5 +1,5 @@
 import React from 'react';
-import PhotoSet from './PhotoSet.jsx';
+import PhotoSet from './PhotoSet';
 
 const PhotoCarousel = () => (
   <div className="photo-carousel">

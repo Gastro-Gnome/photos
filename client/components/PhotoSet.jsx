@@ -1,5 +1,5 @@
 import React from 'react';
-import Photo from './Photo.jsx';
+import Photo from './Photo';
 
 const PhotoSet = ({position }) => (
   <div className={`photo-set ${position}`}>

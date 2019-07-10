@@ -1,5 +1,5 @@
 import React from 'react';
-import PhotoBox from './PhotoBox.jsx';
+import PhotoBox from './PhotoBox';
 
 const Photo = ({location}) => (
   <div className={`photo photo-${location}`}>
