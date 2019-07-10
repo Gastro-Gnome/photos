@@ -1,0 +1,143 @@
+div{
+  /* border: 1px solid black; */
+  /* padding-top: 5px; */
+ 
+}
+#app{
+  display: flex;
+  justify-content: flex-end;
+}
+.showcase-container{
+  height: 336px;
+  width: 660px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.showcase-container_inner{
+  height: 220px;
+  width: 660px;
+}
+.photos-footer{
+  height: 18.391px;
+  width: 660px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: center; */
+}
+.see-all{
+  /* vertical-align: baseline; */
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.grid-svg{
+  height: 18px;
+  width:18px;
+}
+.photo-carousel{
+  border: none;
+  padding: 0px;
+  height: 0px;
+  width: 660px;
+}
+.photo-set{
+  height: 220px;
+  position: absolute;
+  width: 660px;
+  /* display: inline-block; */
+  display: flex;
+  flex-direction: row;
+}
+.prev{
+  z-index: -2;
+}
+.next{
+  z-index: -1;
+}
+.photo{
+  height: 220px;
+  width: 220px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.photo-left{
+  z-index: 0;
+}
+.photo-middle{
+  z-index: 1;
+  height: 250px;
+  width: 250px;
+  margin: -15px;
+  box-shadow: 0 0 25px -3px rgba(0,0,0,.5);
+}
+.photo-right{
+  z-index: 0;
+}
+.photo-container{
+  height: 100%;
+  width: 100%;
+}
+.photo-box-overlay{
+  height: 42.24px;
+  width: 250px;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  background: rgba(0,0,0,.5);
+}
+.photo-box{
+  height:100%;
+  width: 100%;
+}
+.media-avatar{
+  height: 36px;
+  width: 36px;
+  border-right: 6px solid transparent;
+  
+}
+.photo-profile{
+  border-radius: 4px;
+}
+.media-story{
+  height: 36px;
+  width: 200px;
+}
+.photo-desc{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+img{
+  height: 100%;
+  width: 100%;
+}
+
+.nav{
+  height: 48px;
+  width:53px;
+  vertical-align: baseline;
+  display: inline-block;
+  fill: white;
+}
+.nav-left{
+  z-index: 2;
+  position: relative;
+  top: 86px;
+  left: 0px;
+}
+.nav-right{
+  z-index: 2;
+  position: relative;
+  top: 86px;
+  left: 554px;
+}
