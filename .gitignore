@@ -1,5 +1,4 @@
 node_modules
-package-lock.json
 public/main.js
 client/components/__test__/__snapshots__/App.test.js.snap
 .DS_Store
