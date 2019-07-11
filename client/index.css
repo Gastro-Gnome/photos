@@ -111,6 +111,9 @@ div{
 .media-story{
   height: 36px;
   width: 200px;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
 }
 .photo-desc{
   text-decoration: none;

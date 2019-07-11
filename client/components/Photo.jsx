@@ -23,7 +23,7 @@ const Photo = ({ location, image }) => (
           }
           <div className="media-story">
             <a className="photo-desc" href="google.com">
-              {'Photo of Archive Bar & Kitchen - San Francisco, CA, United States'}
+              {image.caption ? image.caption : 'Photo of Archive Bar & Kitchen - San Francisco, CA, United States'}
             </a>
           </div>
         </div>
