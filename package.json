@@ -11,9 +11,11 @@
     "build": "webpack --config webpack.config.js -w",
     "start": "nodemon server/index.js",
     "seed": "node database/seed.js",
-    "test": "jest"
+    "test": "jest",
+    "jest:coverage": "jest --coverage --colors"
   },
   "dependencies": {
+    "aws-sdk": "^2.491.0",
     "express": "^4.17.1",
     "mongoose": "^5.6.3",
     "nodemon": "^1.19.1",

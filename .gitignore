@@ -1,4 +1,6 @@
 node_modules
 public/main.js
-client/components/__test__/__snapshots__/App.test.js.snap
+client/components/__test__/__snapshots__
 .DS_Store
+coverage
+config
