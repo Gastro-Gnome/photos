@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const left = (
   <svg id="48x48_chevron_left" height="48" viewBox="0 0 48 48" width="48">
@@ -12,10 +13,21 @@ const right = (
   </svg>
 );
 
-const Nav = ({direction}) => (
-  <div className={`nav ${direction}`}>
+const Nav = ({ direction, clickHandler }) => (
+  <div
+    className={`nav ${direction}`} 
+    onClick={() => clickHandler(direction.slice(4))}
+    onKeyPress={() => clickHandler(direction.slice(4))}
+    role="button"
+    tabIndex="-1"
+  >
     <span>{direction === 'nav-left' ? left : right}</span>
   </div>
 );
 
 export default Nav;
+
+Nav.propTypes = {
+  direction: PropTypes.string.isRequired,
+  clickHandler: PropTypes.func.isRequired,
+};
