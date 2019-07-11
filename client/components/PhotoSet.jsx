@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Photo from './Photo';
 
 const PhotoSet = ({ position, set }) => (
@@ -11,3 +12,11 @@ const PhotoSet = ({ position, set }) => (
 );
 
 export default PhotoSet;
+
+PhotoSet.propTypes = {
+  position: PropTypes.string.isRequired,
+  set: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]))).isRequired,
+};
