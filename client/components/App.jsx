@@ -2,7 +2,6 @@ import React from 'react';
 import PhotoCarousel from './PhotoCarousel';
 import Nav from './Nav';
 import PhotosFooter from './PhotosFooter';
-import { set } from 'mongoose';
 
 class App extends React.Component {
   constructor(props) {
