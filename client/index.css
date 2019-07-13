@@ -7,7 +7,7 @@ div{
   display: flex;
   justify-content: flex-end;
 }
-.showcase-container{
+/* .showcase-container{
   height: 336px;
   width: 660px;
   display: flex;
@@ -19,18 +19,17 @@ div{
 .showcase-container_inner{
   height: 220px;
   width: 660px;
-}
-.photos-footer{
+} */
+/* *********************************************** carousel footer *************************************** */
+/* .photos-footer{
   height: 18.391px;
   width: 660px;
   padding-bottom: 6px;
   padding-top: 6px;
   display: flex;
   justify-content: flex-end;
-  /* align-items: center; */
 }
 .see-all{
-  /* vertical-align: baseline; */
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -38,28 +37,22 @@ div{
 .grid-svg{
   height: 18px;
   width:18px;
-}
-.photo-carousel{
+} */
+/* *********************************************** carousel *************************************** */
+/* .photo-carousel{
   border: none;
   padding: 0px;
   height: 0px;
   width: 660px;
-}
-.photo-set{
+} */
+/* .photo-set{
   height: 220px;
   position: absolute;
   width: 660px;
-  /* display: inline-block; */
   display: flex;
   flex-direction: row;
-}
-.prev{
-  z-index: -2;
-}
-.next{
-  z-index: -1;
-}
-.photo{
+} */
+/* .photo{
   height: 220px;
   width: 220px;
   display: flex;
@@ -69,7 +62,7 @@ div{
 .photo-left{
   z-index: 0;
 }
-.photo-middle{
+.emphasis{
   z-index: 1;
   height: 250px;
   width: 250px;
@@ -83,7 +76,13 @@ div{
   height: 100%;
   width: 100%;
 }
-.photo-box-overlay{
+.photo-box{
+  height:100%;
+  width: 100%;
+} */
+
+/* *********************************************** photo overlay *************************************** */
+/* .photo-box-overlay{
   height: 42.24px;
   width: 250px;
   z-index: 1;
@@ -94,10 +93,6 @@ div{
   align-items: center;
   opacity: 1;
   background: rgba(0,0,0,.5);
-}
-.photo-box{
-  height:100%;
-  width: 100%;
 }
 .media-avatar{
   height: 36px;
@@ -123,8 +118,8 @@ div{
 img{
   height: 100%;
   width: 100%;
-}
-
+} */
+/* *********************************************** Nav buttons *************************************** */
 .nav{
   height: 48px;
   width:53px;
@@ -143,4 +138,12 @@ img{
   position: relative;
   top: 86px;
   left: 554px;
+}
+
+/* *********************************************** modal *************************************** */
+.ReactModal__Overlay{
+  z-index: 11;
+}
+.ReactModal__Content{
+  background: rgba(0,0,0,.7);
 }

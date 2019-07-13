@@ -1,0 +1,60 @@
+.photo{
+  height: 220px;
+  width: 220px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transition: all .3s ease;
+}
+
+/* .photo:hover{
+  height: 250px;
+  width: 250px;
+  margin: -15px;
+  box-shadow: 0 0 25px -3px rgba(0,0,0,.5);
+  z-index: 1;
+} */
+.photoContainer{
+  height: 100%;
+  width: 100%;
+}
+.emphasis{
+  z-index: 1;
+  height: 250px;
+  width: 250px;
+  margin: -15px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-shadow: 0 0 25px -3px rgba(0,0,0,.5);
+  transition: all .3s ease;
+}
+.photoBoxOverlay{
+  height: 42px;
+  width: 250px;
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  background: rgba(0,0,0,.5);
+}
+.mediaAvatar{
+  height: 36px;
+  width: 36px;
+  border-right: 6px solid transparent;
+}
+.mediaStory{
+  height: 36px;
+  width: 200px;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+}
+.photoDesc{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}

@@ -1,0 +1,13 @@
+.showcaseContainer{
+  height: 336px;
+  width: 660px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.showcaseContainerInner{
+  height: 220px;
+  width: 660px;
+}

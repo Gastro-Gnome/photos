@@ -1,0 +1,7 @@
+.photoSet{
+  height: 220px;
+  position: absolute;
+  width: 660px;
+  display: flex;
+  flex-direction: row;
+}

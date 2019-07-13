@@ -1,15 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PhotoSet from './PhotoSet';
+import styles from './style/PhotoCarousel.css';
 
-const PhotoCarousel = ({ photos, currentPhoto }) => (
-  <div className="photo-carousel">
-    {/* <PhotoSet
-      position="prev"
-      set={photos.slice((currentPhoto > 0 ? currentPhoto - 1 : 0), currentPhoto + 2)}
-    /> */}
-    <PhotoSet position="current" set={photos.slice(currentPhoto, currentPhoto + 3)} />
-    {/* <PhotoSet position="next" set={photos.slice(currentPhoto + 1, currentPhoto + 4)} /> */}
+const PhotoCarousel = ({ photos, currentPhoto, openModal }) => (
+  <div className={styles.photoCarousel}>
+    <PhotoSet set={photos.slice(currentPhoto, currentPhoto + 3)} openModal={openModal} />
   </div>
 );
 
@@ -21,4 +17,5 @@ PhotoCarousel.propTypes = {
     PropTypes.number,
   ]))).isRequired,
   currentPhoto: PropTypes.number.isRequired,
+  openModal: PropTypes.func.isRequired,
 };
