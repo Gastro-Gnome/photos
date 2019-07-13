@@ -1,0 +1,40 @@
+.modalPhotoFooter{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height:30px;
+  width: 100%;
+  /* margin-top: -30px; */
+  z-index: 1;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.seeAll{
+  color: white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.svg{
+  height: 18px;
+  width: 18px;
+  fill: #fff;
+  padding-right: 5px;
+}
+.count{
+  vertical-align: baseline
+}
+.share{
+  width: 100px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}

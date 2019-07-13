@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './style/PhotoBox.css';
+import styles from './styles/PhotoBox.css';
 
 const PhotoBox = ({ use, imageId }) => (
   <div className={styles.photoBox}>

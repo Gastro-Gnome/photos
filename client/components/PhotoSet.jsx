@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Photo from './Photo';
-import styles from './style/PhotoSet.css';
+import styles from './styles/PhotoSet.css';
 
 class PhotoSet extends React.Component {
   constructor(props) {

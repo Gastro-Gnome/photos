@@ -1,0 +1,19 @@
+.modal{
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: -10;
+}
+.modalOverlay{
+  height: 100%;
+  width: 100%;
+  opacity: .7;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  z-index: 100;
+}
+.modalContent{
+  background: rgba(0,0,0,0.7);
+  border-radius: 6px;
+}

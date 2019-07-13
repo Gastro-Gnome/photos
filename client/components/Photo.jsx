@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PhotoBox from './PhotoBox';
-import styles from './style/Photo.css';
+import styles from './styles/Photo.css';
 
 const Photo = ({
   emphasis,

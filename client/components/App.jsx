@@ -1,10 +1,13 @@
 import React from 'react';
 import Modal from 'react-modal';
+import PropTypes from 'prop-types';
 import PhotoCarousel from './PhotoCarousel';
 import Nav from './Nav';
 import PhotosFooter from './PhotosFooter';
+// import Modal from './Modal';
 import ModalMedia from './ModalMedia';
-import styles from './style/App.css';
+import styles from './styles/App.css';
+import modalStyle from './styles/modalStyle';
 
 Modal.setAppElement(document.getElementById('app'));
 
@@ -12,10 +15,10 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      businessId: props.businessId || 'archive-bar-and-kitchen-san-francisco',
+      businessId: props.businessId,
       photos: [],
       currentPhoto: 0,
-      modalIsOpen: false,
+      modalIsOpen: true,
       modalPhoto: 0,
     };
     this.scroll = this.scroll.bind(this);
@@ -60,6 +63,16 @@ class App extends React.Component {
     this.setState({ modalIsOpen: false });
   }
 
+  modalScroll(direction) {
+    const { modalPhoto, photos } = this.state;
+    if (direction === 'left' && modalPhoto > 0) {
+      this.setState({ modalPhoto: modalPhoto - 1 });
+    }
+    if (direction === 'right' && modalPhoto < photos.length - 4) {
+      this.setState({ modalPhoto: modalPhoto + 1 });
+    }
+  }
+
   render() {
     const {
       photos,
@@ -77,21 +90,32 @@ class App extends React.Component {
         </div>
         <PhotosFooter quantity={photos.length} businessId={businessId} />
         {/* <Modal
+          modalIsOpen={modalIsOpen}
+          onRequestClose={this.closeModal}
+          modalContent={<div>Hello</div>}
+        /> */}
+        <Modal
           isOpen={modalIsOpen}
           onRequestClose={this.closeModal}
-          // style={{ overlay: { zIndex: 10 } }}
+          style={modalStyle}
         >
           <ModalMedia
-            closeModal={this.closeModal}
             photo={photos[modalPhoto]}
             currentPhoto={modalPhoto}
             quantity={photos.length}
             modalScroll={this.modalScroll}
           />
-        </Modal> */}
+        </Modal>
       </div>
     );
   }
 }
 
 export default App;
+
+App.propTypes = {
+  businessId: PropTypes.string,
+};
+App.defaultProps = {
+  businessId: 'archive-bar-and-kitchen-san-francisco',
+};

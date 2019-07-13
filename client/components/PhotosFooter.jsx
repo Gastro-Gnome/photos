@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './style/PhotosFooter.css'
+import styles from './styles/PhotosFooter.css'
 
 const PhotosFooter = ({ businessId, quantity }) => (
   <div className={styles.photosFooter}>

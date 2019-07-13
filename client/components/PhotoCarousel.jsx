@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PhotoSet from './PhotoSet';
-import styles from './style/PhotoCarousel.css';
+import styles from './styles/PhotoCarousel.css';
 
 const PhotoCarousel = ({ photos, currentPhoto, openModal }) => (
   <div className={styles.photoCarousel}>
