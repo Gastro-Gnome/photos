@@ -24,12 +24,10 @@
 .mod-left{
   z-index: 2;
   position: absolute;
-  top: 50%;
   left: 0px;
 }
 .mod-right{
   z-index: 2;
   position: absolute;
-  top: 50%;
   right: 0;
 }

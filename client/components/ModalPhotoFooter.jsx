@@ -12,7 +12,7 @@ const ModalPhotoFooter = ({ currentPhoto, quantity, businessId }) => (
       </span>
       Browse all
     </a>
-    <span className={styles.count}>{`${currentPhoto} of ${quantity}`}</span>
+    <span className={styles.count}>{`${currentPhoto + 1} of ${quantity}`}</span>
     <span className={styles.share}>
       <div className={styles.seeAll}>
         <span className={styles.svg}>
@@ -34,7 +34,10 @@ const ModalPhotoFooter = ({ currentPhoto, quantity, businessId }) => (
 export default ModalPhotoFooter;
 
 ModalPhotoFooter.propTypes = {
-  currentPhoto: PropTypes.string.isRequired,
-  quantity: PropTypes.string.isRequired,
-  businessId: PropTypes.string.isRequired,
+  currentPhoto: PropTypes.number.isRequired,
+  quantity: PropTypes.number.isRequired,
+  businessId: PropTypes.string,
+};
+ModalPhotoFooter.defaultProps = {
+  businessId: 'abc123',
 };
