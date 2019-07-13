@@ -1,9 +1,11 @@
 const mongoose = require('mongoose');
 const db = require('./index.js');
 
+// { type: String, unique: true }
+
 const photoSchema = new mongoose.Schema({
   business_id: String,
-  photo_id: { type: String, unique: true },
+  photo_id: String,
   user_id: String,
   user_photo_id: String,
   caption: String,

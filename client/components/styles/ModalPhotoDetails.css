@@ -1,0 +1,101 @@
+.photoDetails{
+height: 80%;
+}
+.user{
+  display: flex;
+  flex-direction: row;
+}
+.mediaAvatar{
+  height: 30px;
+  width: 30px;
+  padding: 10px;
+  padding-right: 0;
+}
+.mediaStory{
+  height: 30px;
+  padding: 10px;
+}
+.userName{
+  font-weight: bold;
+  color: #0073BB;
+}
+.userStats{
+  display: flex;
+  flex-direction: row;
+
+}
+.friendCount{
+  padding-right: 5px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.friendSvg{
+  height: 18px;
+  width: 18px;
+  padding: 3px;
+  padding-left: 0;
+}
+.svg{
+  fill: #f15c00;
+}
+.reviewCount{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.reveiwSvg{
+  height: 18px;
+  width: 18px;
+  padding: 3px;
+}
+.mediaContainer{
+  font-size: 12px;
+}
+.caption{
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.photoUploadDate{
+  padding-left: 10px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+.mediaInfo{
+  padding-left: 10px;
+  font-weight: bold;
+}
+.btnHolder{
+  display: flex;
+  flex-direction: row;
+}
+.helpfulBtn{
+  height: 30;
+  width: 100;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #666;
+  padding: 5px 8px;
+  margin-right: 3px;
+  display: flex;
+  align-items: center;
+  
+}
+.reservation{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  fill: #0073BB;
+  color: #0073BB;
+}
+.reservationSvg{
+  height: 18px;
+  width: 18px;
+  padding-right: 3px;
+}
+

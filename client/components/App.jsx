@@ -18,12 +18,13 @@ class App extends React.Component {
       businessId: props.businessId,
       photos: [],
       currentPhoto: 0,
-      modalIsOpen: true,
+      modalIsOpen: false,
       modalPhoto: 0,
     };
     this.scroll = this.scroll.bind(this);
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
+    this.modalScroll = this.modalScroll.bind(this);
   }
 
   componentDidMount() {
@@ -64,11 +65,12 @@ class App extends React.Component {
   }
 
   modalScroll(direction) {
+    console.log(direction);
     const { modalPhoto, photos } = this.state;
     if (direction === 'left' && modalPhoto > 0) {
       this.setState({ modalPhoto: modalPhoto - 1 });
     }
-    if (direction === 'right' && modalPhoto < photos.length - 4) {
+    if (direction === 'right' && modalPhoto < photos.length - 1) {
       this.setState({ modalPhoto: modalPhoto + 1 });
     }
   }

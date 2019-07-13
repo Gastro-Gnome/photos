@@ -1,18 +1,21 @@
 .modalContainer{
   height: 100%;
   width:100%;
-  /* display: flex;
-  flex-direction: row; */
 }
-.modalPhoto{
+.modalMedia{
   position: absolute;
   height: 100%;
   left: 0;
   bottom: 0;
   right: 300px;
-  /* background-color: white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.modalPhoto{
+/* max-width: 100%; */
 
+}
 .detailsContainer{
   position: absolute;
   height: 100%;

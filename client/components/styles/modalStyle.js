@@ -8,8 +8,8 @@ const modalStyle = {
     backgroundColor: 'rgba(0, 0, 0, 0.75)',
     zIndex: 3,
     display: 'flex',
-    'align-items': 'center',
-    'justify-content': 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   content: {
     position: 'absolute',

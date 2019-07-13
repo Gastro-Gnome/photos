@@ -13,15 +13,20 @@ const ModalMedia = ({
   modalScroll,
 }) => (
   <div className={styles.modalContainer}>
-    <div className={styles.modalPhoto}>
-      <PhotoBox use={'modal'} imageId={photo.photo_id}  />
+    <div className={styles.modalMedia}>
+      {photo
+        && (
+          <div className={styles.modalPhoto}>
+            <PhotoBox use="main" imageId={photo.photo_id} />
+          </div>
+        )}
       <ModalPhotoFooter
         currentPhoto={currentPhoto}
         quantity={quantity}
         businessId={photo.business_id}
       />
-      <Nav direction={'mod-left'} clickHandler={modalScroll} />
-      <Nav direction={'mod-right'} clickHandler={modalScroll} />
+      <Nav direction="mod-left" clickHandler={modalScroll} />
+      <Nav direction="mod-right" clickHandler={modalScroll} />
     </div>
     <div className={styles.detailsContainer}>
       <ModalPhotoDetails photo={photo} />

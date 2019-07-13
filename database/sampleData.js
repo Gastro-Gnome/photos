@@ -88,4 +88,5 @@ const sampleData = [
 
 ];
 
-export default sampleData;
+// export default sampleData;
+module.exports = sampleData;
