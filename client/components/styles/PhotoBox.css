@@ -1,0 +1,15 @@
+.photoBox{
+  height:100%;
+  width: 100%;
+}
+.img{
+  height: 100%;
+  width: 100%;
+  transition-timing-function: ease 1s;
+}
+.profile{
+  border-radius: 4px;
+}
+.main{
+  
+}

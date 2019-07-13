@@ -1,15 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './styles/PhotoBox.css';
 
 const PhotoBox = ({ use, imageId }) => (
-  <div className="photo-box">
-    <a href="www.google.com">
-      <img
-        className={use}
-        src={`https://zjthomas.s3-us-west-1.amazonaws.com/${use === 'photo-main' ? 'b' : ''}photo/${imageId}.jpg`}
-        alt="Food Pic"
-      />
-    </a>
+  <div className={styles.photoBox}>
+    <img
+      className={`${styles.img} ${styles[use]}`}
+      src={`https://zjthomas.s3-us-west-1.amazonaws.com/${use === 'main' ? 'b' : ''}photo/${imageId}.jpg`}
+      alt="Food Pic"
+    />
   </div>
 );
 

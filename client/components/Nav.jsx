@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './styles/Nav.css';
 
 const Nav = ({ direction, clickHandler }) => {
   const left = (
@@ -16,13 +17,13 @@ const Nav = ({ direction, clickHandler }) => {
 
   return (
     <div
-      className={`nav ${direction}`}
+      className={`${styles.nav} ${styles[direction]}`}
       onClick={() => clickHandler(direction.slice(4))}
       onKeyPress={() => clickHandler(direction.slice(4))}
       role="button"
       tabIndex="-1"
     >
-      <span>{direction === 'nav-left' ? left : right}</span>
+      <span>{direction.slice(4) === 'left' ? left : right}</span>
     </div>
   );
 };
