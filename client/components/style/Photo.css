@@ -40,6 +40,8 @@
   align-items: center;
   opacity: 1;
   background: rgba(0,0,0,.5);
+  /* animation-name: fadein 1s;
+  animation-delay: .5s; */
 }
 .mediaAvatar{
   height: 36px;

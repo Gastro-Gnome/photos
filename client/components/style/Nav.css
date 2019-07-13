@@ -1,0 +1,23 @@
+.nav{
+  height: 48px;
+  width:53px;
+  vertical-align: baseline;
+  display: inline-block;
+  fill: white;
+}
+.nav-left{
+  z-index: 2;
+  position: relative;
+  top: 86px;
+  left: 0px;
+  opacity: .2;
+}
+.nav-left:hover{opacity: 1}
+.nav-right{
+  z-index: 2;
+  position: relative;
+  top: 86px;
+  left: 554px;
+  opacity: .2;
+}
+.nav-right:hover{opacity: 1}
