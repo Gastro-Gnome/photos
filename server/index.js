@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
   res.end();
 });
 
-app.get('/biz_photos/:businessId', (req, res) => {
+app.get('/:businessId', (req, res) => {
   console.log('get', req.params.businessId);
   Photos.find({ business_id: req.params.businessId })
     .then(data => res.send(JSON.stringify(data)))

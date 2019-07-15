@@ -29,7 +29,7 @@ class App extends React.Component {
 
   componentDidMount() {
     const { businessId } = this.state;
-    fetch(`photos/biz_photos/${businessId}`, {
+    fetch(`photos/${businessId}`, {
       method: 'GET',
     }).then(res => res.json())
       .then(res => this.setState({ photos: res }))
