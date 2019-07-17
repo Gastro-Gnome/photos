@@ -32,7 +32,10 @@ class App extends React.Component {
     fetch(`photos/${businessId}`, {
       method: 'GET',
     }).then(res => res.json())
-      .then(res => this.setState({ photos: res }))
+      .then((res) => {
+        console.log(res);
+        this.setState({ photos: res })
+      })
       .then(() => this.autoScroll())
       .catch(err => console.log(err));
   }
