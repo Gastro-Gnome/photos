@@ -12,7 +12,8 @@
     "start": "nodemon server/index.js",
     "seed": "node database/seed.js",
     "test": "jest",
-    "jest:coverage": "jest --coverage --colors"
+    "test:coverage": "jest --coverage --colors",
+    "start:docker": "npm run seed && npm start"
   },
   "dependencies": {
     "aws-sdk": "^2.491.0",
