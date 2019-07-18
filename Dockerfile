@@ -8,8 +8,6 @@ COPY . /src/app
 
 RUN npm install
 
-RUN npm run seed
-
 EXPOSE 3000
 
-CMD ["npm", "start"]
+CMD ["npm", "run", "start:docker"]

@@ -3,7 +3,7 @@ const path = require('path');
 const Photos = require('../database/Photos.js');
 
 const app = express();
-const port = 3001;
+const port = 3000;
 
 app.use(express.static(path.join(__dirname, '../public')));
 

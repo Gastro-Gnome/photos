@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
 
-// 172.17.0.2
-
-const db = mongoose.connect('mongodb://localhost/fec', { useNewUrlParser: true });
+const db = mongoose.connect('mongodb://database/fec', { useNewUrlParser: true, server: { reconnectTries: Number.MAX_VALUE } });
 
 module.exports = db;
