@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
 
-const db = mongoose.connect('mongodb://database/fec', { useNewUrlParser: true, server: { reconnectTries: Number.MAX_VALUE } });
+const db = mongoose.connect('mongodb://localhost/fec', { useNewUrlParser: true });
 
 module.exports = db;
