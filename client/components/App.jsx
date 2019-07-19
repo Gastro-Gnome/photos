@@ -34,7 +34,7 @@ class App extends React.Component {
     }).then(res => res.json())
       .then((res) => {
         console.log(res);
-        this.setState({ photos: res })
+        this.setState({ photos: res });
       })
       .then(() => this.autoScroll())
       .catch(err => console.log(err));
