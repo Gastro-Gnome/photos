@@ -69,7 +69,6 @@ class App extends React.Component {
   }
 
   modalScroll(direction) {
-    console.log(direction);
     const { modalPhoto, photos } = this.state;
     if (direction === 'left' && modalPhoto > 0) {
       this.setState({ modalPhoto: modalPhoto - 1 });
