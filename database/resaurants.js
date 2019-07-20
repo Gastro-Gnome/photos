@@ -25,8 +25,8 @@ const restaurants = [
   'the-island-shrimp',
   'the-juniper-lane',
   'the-cocoa-monument',
-  'blueprint',
-  'acapella',
+  'the-grand-fish',
+  'the-japanese-after-dark',
   'maximus',
   'bambino',
   'candle',
@@ -37,7 +37,7 @@ const restaurants = [
   'the-kings-boar',
   'bounty',
   'twilight',
-  'bounty',
+  'the-chili-angel',
   'modesty',
   'pavilion',
   'the-jade-boulevard',
@@ -46,7 +46,7 @@ const restaurants = [
   'the-autumn-dragon',
   'the-queens-orchid',
   'clarity',
-  'pavilion',
+  'the-noodle-cottage',
   'bones',
   'lily',
   'the-crown',
@@ -57,7 +57,7 @@ const restaurants = [
   'the-proud-elephant',
   'roots',
   'streetwise',
-  'podium',
+  'the-spring-lighthouse',
   'the-emperor',
   'the-peacock',
   'the-incredible-exhibit',
@@ -68,7 +68,7 @@ const restaurants = [
   'the-depot',
   'indigo',
   'retro',
-  'vista',
+  'prospects',
   'meadows',
   'the-summer-scarf',
   'the-paradise-oriental',
@@ -87,8 +87,8 @@ const restaurants = [
   'the-chili-lane',
   'serenity',
   'shambles',
-  'clarity',
-  'blueprint',
+  'charm',
+  'phish-shack',
   'rogue',
   'the-coriander-maple',
   'the-bamboo-lane',
@@ -102,3 +102,29 @@ const restaurants = [
 ];
 
 module.exports = restaurants;
+
+// let temp = {};
+// let names = [
+//   'the-japanese-after-dark',
+//   'the-chili-angel',
+//   'the-noodle-cottage',
+//   'the-spring-lighthouse',
+//   'prospects',
+//   'charm',
+//   'lavender',
+//   'twilight',
+// ];
+// let i = 0;
+// restaurants.forEach((val, index) => {
+
+//   if (temp[val]) {
+//     temp[val]++;
+//     console.log(val, temp[val]);
+//     // restaurants[index] = names[i];
+//     // i++;
+//   } else {
+//     temp[val] = 1;
+//   }
+// });
+
+// console.log(restaurants);
