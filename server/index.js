@@ -5,13 +5,14 @@ const Photos = require('../database/Photos.js');
 const app = express();
 const port = 3000;
 
-app.use(express.static(path.join(__dirname, '../public')));
+app.use('/:businessId', express.static(path.join(__dirname, '../public')));
+app.use('/', express.static(path.join(__dirname, '../public')));
 
 app.get('/', (req, res) => {
   res.end();
 });
 
-app.get('/photos/:businessId', (req, res) => {
+app.get('/:businessId/photos', (req, res) => {
   console.log('get', req.params.businessId);
   Photos.find({ business_id: req.params.businessId })
     .then(data => res.send(JSON.stringify(data)))

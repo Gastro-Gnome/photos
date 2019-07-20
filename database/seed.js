@@ -5,16 +5,14 @@ const sampleData = require('./sampleData');
 const restaurants = require('./resaurants');
 const Photo = require('./Photos');
 
-const insertManyAsync = promisify(Photo.insertMany);
-
 const insert = () => {
   let insertions = [];
   let entry = {};
   for (let i = 0; i < sampleData.length; i++) {
-    let batch = [];
-    let data = sampleData[i];
+    const batch = [];
+    const data = sampleData[i];
     for (let j = 0; j < restaurants.length; j++) {
-      let restaurant = restaurants[j];
+      const restaurant = restaurants[j];
       entry = {};
       Object.assign(entry, data);
       entry.business_id = restaurant;
