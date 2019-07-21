@@ -28,13 +28,14 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    const { businessId } = this.state;
-    fetch(`photos/${businessId}`, {
+    fetch('photos', {
       method: 'GET',
     }).then(res => res.json())
       .then((res) => {
-        console.log(res);
-        this.setState({ photos: res });
+        this.setState({
+          photos: res,
+          businessId: window.location.pathname,
+        });
       })
       .then(() => this.autoScroll())
       .catch(err => console.log(err));
@@ -68,7 +69,6 @@ class App extends React.Component {
   }
 
   modalScroll(direction) {
-    console.log(direction);
     const { modalPhoto, photos } = this.state;
     if (direction === 'left' && modalPhoto > 0) {
       this.setState({ modalPhoto: modalPhoto - 1 });

@@ -8,7 +8,7 @@ const sampleData = [
   {
     business_id: 'archive-bar-and-kitchen-san-francisco',
     photo_id: 'bHgmeinxvc5G7MMy6l5hTQ',
-    caption: 'Pastrami &amp; Peppers',
+    caption: 'Pastrami & Peppers',
     label: 'food',
   },
   {

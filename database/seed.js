@@ -1,22 +1,31 @@
 const db = require('./index.js');
 const mongoose = require('mongoose');
+const { promisify } = require('util');
 const sampleData = require('./sampleData');
+const restaurants = require('./resaurants');
 const Photo = require('./Photos');
 
-const seed = () => {
-  let extraData = [];
-  for (let i = 0; i < 10; i += 1) {
-    extraData = extraData.concat(sampleData);
+const insert = () => {
+  let insertions = [];
+  let entry = {};
+  for (let i = 0; i < sampleData.length; i++) {
+    const batch = [];
+    const data = sampleData[i];
+    for (let j = 0; j < restaurants.length; j++) {
+      const restaurant = restaurants[j];
+      entry = {};
+      Object.assign(entry, data);
+      entry.business_id = restaurant;
+      batch.push(entry);
+    }
+    insertions.push(Photo.insertMany(batch));
   }
-  // for (let i = 0; i < extraData.length; i += 1) {
-  //   extraData[i].photo_id = i.toString();
-  // }
-  Photo.insertMany(extraData)
-    .then(() => {
-      console.log('success');
-      mongoose.disconnect();
-    })
-    .catch(err => console.log(err));
+  return Promise.all(insertions);
+};
+
+const seed = async () => {
+  const insertion = await insert();
+  mongoose.disconnect();
 };
 
 seed();
